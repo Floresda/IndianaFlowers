@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indiana Flowers</title>
+</head>
+<body>
+</body>
+<script>
+    
+    const header = document.createElement('h1');
+    header.textContent = 'Welcome to Indiana Spring Flowers';
+
+   
+    const paragraph = document.createElement('p');
+    paragraph.textContent = 'Spring in Indiana brings a vibrant display of beautiful flowers. Here are some of the popular spring flowers found in the state:';
+
+  
+    const orderedList = document.createElement('ol');
+
+    const flowers = ['Tulip', 'Daffodil', 'Lilac'];
+    flowers.forEach((flower) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = flower;
+      orderedList.appendChild(listItem);
+    });
+
+    document.body.appendChild(header);
+    document.body.appendChild(paragraph);
+    document.body.appendChild(orderedList);
+  </script>
+</html>
